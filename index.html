@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+  <nav> 
+    <img src="images/logo.svg" alt="" class="logo">
+    <div id="topNav" class="topnav">
+      <a href="javascript:void(0)"><img src="images/icon-close-menu.svg" class="closebtn" onclick="closeNav()"></a>
+      <div class="topnav-contents">
+        <div class="dropdown">
+          <button class="buttons" onclick="dropDown()">Features
+            <img src="images/icon-arrow-down.svg" alt="" class="downarrow">
+            <img src="images/icon-arrow-up.svg" alt=""  class="uparrow"> 
+          </button> 
+          <div class="dropdown-content-one" id="firstDropdown">
+           <a href="#"><img src="images/icon-todo.svg" alt="">Todo List</a>
+            <a href="#"><img src="images/icon-calendar.svg" alt="">Calendar</a>
+            <a href="#"><img src="images/icon-reminders.svg" alt="">Reminders</a>
+            <a href="#"><img src="images/icon-planning.svg" alt="">Planning</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="buttons" onclick="dropmenu()">Company
+            <img src="images/icon-arrow-down.svg" alt="" class="downarrow" >
+            <img src="images/icon-arrow-up.svg" alt=""  class="uparrow"> 
+          </button>
+          <div class="dropdown-content-two" id="secondDropdown">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>  
+        <a href="#">career </a>
+        <a href="#">About</a>
+          <div class="btns" >
+           <a href="#" id="btn1">Login</a>
+           <a href="#" id="btn2">Register</a>
+          </div>   
+        </div>
+       
+      </div>
+  
+    </div>
+    <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg" onclick="openNav()"><g fill="#151515" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+      </nav>
+
+ <main>
+  <div class="container">
+    <div class="container-img">
+      <img src="images/image-hero-mobile.png" alt="" id="mobileimg">
+      <img src="images/image-hero-desktop.png" alt=""  id="desktopimg">
+    </div>
+    <div class="container-content">
+      <h1>Make </h1>
+      <h1>remote work</h1>
+      <p>
+       Get your team in sync. no matter your location. streamline processes,create team rituals,
+       and watch productivity soar.
+      </p>
+        <div class="container-btns">
+          <button>Learn more</button>
+        </div>
+        <div class="container-svg">
+          <img src="images/client-databiz.svg" alt="">
+          <img src="images/client-audiophile.svg" alt="">
+          <img src="images/client-meet.svg" alt="">
+          <img src="images/client-maker.svg" alt="">
+        </div>
+    </div>
+  </div>
+  
+ 
+ 
+ </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">christian</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

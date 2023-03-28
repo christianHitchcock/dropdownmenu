@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color:hsl(0, 0%, 98%) ;
+    font-family: 'Epilogue';
+}
+.logo {
+    margin-top: 15px;
+    margin-bottom: 20px; 
+    margin-left: 10px;   
+}
+nav svg {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 230px;
+}
+.topnav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right:0;
+    background-color: hsl(0, 0%, 98%);
+    overflow-x: hidden;
+    transition: 0.9s;
+}
+.topnav-contents {
+    position: relative;
+    width: 100%;
+    top: 10%;
+    text-align: left;
+}
+.topnav-contents button {
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    background-color: transparent;
+  }
+.topnav-contents a {
+    padding: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+.uparrow {
+    display: none;
+ }
+
+.topnav-contents a:hover {
+    color:hsl(0, 0%, 8%) ;
+}
+  
+.topnav .closebtn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 60px;
+ }
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content-one {
+    margin-left: 20px;
+    border-radius: 10px;
+    display: none;
+}
+.dropdown-content-one a {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content-one img {
+    padding-right: 10px;
+}
+
+.dropdown-content-two {
+    position: relative; 
+     margin-left: 20px;
+    border-radius: 10px;
+    display: none;
+}
+.dropdown-content-two a {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.show {display:block;}
+
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+#desktopimg {
+    display: none;
+}
+.btns {
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 40px;
+}
+#btn2 {
+    padding: 10;
+    border-radius: 15px;
+    border: 1px solid hsl(0, 0%, 41%);
+}
+.container-content h1:nth-child(1) {
+    margin-right: -10px;
+  } 
+.container-content h1 {
+    font-size:35px ;
+    font-weight: 700;
+    margin: 10px 18px;
+    display: inline-flex;  
+}
+.container p {
+    color:hsl(0, 0%, 41%) ;
+    font-size: 16px;
+    margin: 20px;
+    margin-top: 5px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 23px;
+}
+.container-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 30px; 
+}
+
+.container-btns button {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    font-size: 16px;
+    padding:10px 15px; 
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 8%);
+}
+.container-btns button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+}
+.container-svg  {
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.container-svg img {
+    width: 90px;
+    height: 45px;
+    padding: 15px;   
+}
+.attribution {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}  
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 80vh;
+        width: 90%;
+        margin: auto;
+    }
+    .container-img {
+        width: 100%;
+        height: 100%;
+        margin-left:  30px;
+        margin-top: 20px;
+    }
+    #mobileimg {
+        display:none;
+    }
+
+    #desktopimg {
+        display: block;
+        width: 100%;
+        height: 90%;
+        padding-right: 30px;
+    }
+    .container-content {
+        width: 100%;
+        height: 100%; 
+        margin-top: 130px; 
+    }
+    .container-content h1 {
+        font-size: 3rem;
+        text-align: left;
+        width: 50%;
+        margin-left: 20px;
+    }
+    .container-content h1:nth-child(2) {
+        width: 90%;
+        margin-top: -15px;
+    }
+    .container-content p {  
+        text-align: left;
+        font-size: 15px;
+        width: 100%;
+        padding-right: 40px;
+    }
+    .container-btns {
+        margin-right: 210px;
+    }
+    .attribution {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    nav {
+    display: flex;
+    justify-content: space-between;
+    } 
+    .logo {
+        margin-top: 35px;
+        margin-left: 50px;   
+    }
+    nav svg {
+        display: none;
+    }
+     
+    .topnav {
+        width: 90%;
+        height: 100%;
+        overflow: visible;
+        position: relative;
+        margin-top: 20px;
+    }
+    .topnav-contents {
+        display: flex;
+        padding: 10px;
+        text-align: center;    
+    }
+    .topnav-contents a {
+        font-size: 18px;
+    }
+
+   .uparrow {
+    display: none;
+   }
+   .topnav-contents button:hover .downarrow {
+    display:none;
+   }
+   .topnav-contents button:hover .uparrow {
+    display:inline-flex;
+   }
+    .topnav .closebtn {
+        display: none;
+    }
+    .topnav-contents button{
+        font-size: 18px;
+    }
+    .topnav-contents button:hover  {
+        color: hsl(0, 0%, 8%);
+        cursor: pointer;
+    }
+    
+    .dropdown:hover .dropdown-content-one {
+        display: block;
+        margin-top: 0; /* remove the gap so it doesn't close */
+    }
+    .dropdown-content-one {
+        position: absolute;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        background-color: hsl(0, 0%, 98%);
+        margin-top: 30px;
+        border-radius: 10px;
+        margin-left: -50px;
+        display: none;
+    }
+    .dropdown-content-one a {
+        color: hsl(0, 0%, 41%);
+        text-decoration: none;
+        display: flex;
+        text-align: center;
+        margin:16px 20px;
+        font-size: 18px;
+    }
+    .dropdown-content-two {
+        position: absolute;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        background-color: hsl(0, 0%, 98%);
+        margin-top: 30px;
+        border-radius: 10px;
+        margin-left: 40px;
+        display: none;
+    }
+    .dropdown-content-two a {
+        color: hsl(0, 0%, 41%);
+        text-decoration: none;
+        text-align: left;
+        font-size: 15px;
+    }
+    .dropdown:hover .dropdown-content-two {
+        display: block;
+        color: hsl(0, 0%, 8%);
+        margin-top: 0; /* remove the gap so it doesn't close */
+    }
+    .btns svg {
+        display: none;
+    }
+
+    .btns  {
+        display: flex;  
+        justify-content: space-between;
+        margin-left: 1100px;
+    }
+    #btn1 {
+        padding: 10px;
+    }
+    #btn2 {
+        border-radius: 15px;
+        padding-left: 15px;
+        padding-top:10px ; 
+        padding-bottom: 1px;
+        padding-right:15px ;
+        border: 1px solid hsl(0, 0%, 41%);
+    }
+    #btn2:hover {
+        border: 2px solid hsl(0, 0%, 8%);
+    }
+    .container {
+        margin-top: 80px;
+        height: 70vh;
+        padding: 0;
+        width: 75%;
+    }
+    .container-img {
+        width: 100%;
+        height: auto;
+        margin-right: 60px;
+    }
+    
+    .container-content {
+        width: 100%;
+        height: auto;
+        margin-top: 120px;
+    }
+    .container-content h1 {
+        font-size: 5.5rem; 
+    }
+    .container-content p {
+        font-size: 20px;
+        width: 75%;
+    }
+    .container-btns {
+        margin-right: 550px;
+        margin-top: 50px;
+        margin-bottom:50px ;
+    }
+    .attribution {
+     font-size: 18px;
+     margin-top: 100px;
+    }
+    .container-btns button {
+        font-size: 22px; 
+    }
+    .container-svg  {
+        height: auto;  
+        width: 60%; 
+        margin-top: 70px;
+    }
+    .container-svg img {
+        width: 120px;
+        height: 55px; 
+    }
+
+
+}
